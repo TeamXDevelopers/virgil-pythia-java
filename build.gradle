@@ -74,12 +74,13 @@ buildscript {
         google()
         jcenter()
         mavenCentral()
+        maven { url 'https://jitpack.io' }
     }
     dependencies {
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$versions.kotlinVersion"
         classpath "org.jetbrains.dokka:dokka-gradle-plugin:$versions.dokka"
         classpath "com.android.tools.build:gradle:$versions.gradle"
-        classpath "digital.wup:android-maven-publish:$versions.mavenPublishPlugin"
+//        classpath "digital.wup:android-maven-publish:$versions.mavenPublishPlugin"
     }
 }
 
@@ -88,6 +89,7 @@ allprojects {
         google()
         jcenter()
         mavenCentral()
+        maven { url 'https://jitpack.io' }
     }
 }
 
